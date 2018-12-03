@@ -1,0 +1,12 @@
+jobs:
+- job: BuildMacOS
+  pool:
+    vmImage: 'macOS 10.13'
+
+  timeoutInMinutes: 360
+
+  steps:
+  - bash: echo '111'
+    name: main
+    displayName: 'Build and test'
+    
